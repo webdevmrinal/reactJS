@@ -7,6 +7,7 @@ import { useDispatch} from "react-redux";
 import { updateRestaurantList } from "./utils/restaurantListSlice";
 
 function App() {
+    console.log('app.js')
 
     const dispatch = useDispatch();
 
