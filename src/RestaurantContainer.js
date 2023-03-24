@@ -7,7 +7,6 @@ function RestaurantContainer() {
     const index = resList?.data?.cards
         ?.map((item) => item?.cardType)
         ?.indexOf("seeAllRestaurants");
-    // console.log(resListState.data.cards[index].data.data.cards);
 
     return !resList.data ? (
         <div>Loading</div>
