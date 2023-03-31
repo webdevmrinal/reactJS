@@ -80,6 +80,7 @@ function BodyCarousel() {
     return !carouselList.data ? (
         <div className="m-auto h-80 max-w-[1250px] min-w-[1250px]">
             <CarouselShimmer />
+            {/* loading... */}
         </div>
     ) : carouselList?.data?.cards[index]?.data?.data?.cards.length < 4 ? (
         <></>
