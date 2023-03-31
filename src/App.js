@@ -14,6 +14,7 @@ function App() {
     async function fetchRestaurants() {
         const data = await fetch(RESTAURANT_LIST_URL);
         const json = await data.json();
+        console.log("App.js, line 17 - ", json)
         dispatch(updateRestaurantList(json.data));
     }
 
@@ -29,7 +30,7 @@ function App() {
                 <Header />
             </div>
             {/* Carousel Content Goes Here */}
-            <div className="w-full bg-slate-900">
+            <div className=" w-full bg-slate-900">
                 <BodyCarousel />
             </div>
             {/* Body Content Goes Here */}
