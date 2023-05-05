@@ -22,7 +22,7 @@
   "scripts": {
     "build": "npm run build:app && npm run build:functions",
     "build:app": "react-scripts build",
-    "build:functions": "netlify-lambda build functions",
+    "build:functions": "netlify-lambda build functions -o function-build",
     "start": "netlify-lambda serve functions"
   },
   
