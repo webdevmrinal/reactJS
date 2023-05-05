@@ -2,14 +2,14 @@ import CarouselShimmer from "./CarouselShimmer";
 import { useSelector } from "react-redux";
 import CarouselElement from "./CarouselElement";
 import { HiArrowLeft, HiArrowRight } from "react-icons/hi";
-import { useRef, useState } from "react";
+import { useRef } from "react";
 
 // react-slick-carousel
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
-// Arrow Left
+/*// Arrow Left
 const SampleNextArrow = (props) => {
     const { className, style, onClick } = props;
 
@@ -44,7 +44,7 @@ const SamplePrevArrow = (props) => {
         </div>
     );
 };
-
+*/
 function BodyCarousel() {
     const slider = useRef(null);
     const settings = {
@@ -56,26 +56,10 @@ function BodyCarousel() {
         arrows: false,
     };
 
-    const [curr, setCurr] = useState(0);
-
     const carouselList = useSelector((store) => store.restaurantList);
     const index = carouselList?.data?.cards
         ?.map((item) => item?.data?.subtype)
         ?.indexOf("topCarousel");
-
-    const prev = () =>
-        setCurr((curr) =>
-            curr === 0
-                ? carouselList?.data?.cards[index]?.data?.data?.cards.length - 1
-                : curr - 1
-        );
-    const next = () =>
-        setCurr((curr) =>
-            curr ===
-            carouselList?.data?.cards[index]?.data?.data?.cards.length - 1
-                ? 0
-                : curr + 1
-        );
 
     return !carouselList.data ? (
         <div className="m-auto h-80 max-w-[1250px] min-w-[1250px]">
