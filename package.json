@@ -21,7 +21,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "build": "npm run build:app && npm run build:functions",
+    "build": "npm run build:app",
     "build:app": "react-scripts build",
     "build:functions": "netlify functions:build functions -o function-build",
     "start": "netlify-lambda serve functions"
