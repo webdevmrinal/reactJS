@@ -1,11 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import swiggyLogo from "./swiggy-logo.svg";
 import { BiSearch } from "react-icons/bi";
 import { MdOutlineLocalOffer } from "react-icons/md";
 import { IoHelpBuoyOutline } from "react-icons/io5";
 import { BsMinecart } from "react-icons/bs";
 import { FiChevronDown } from "react-icons/fi";
-import useLocation from "./hooks/useLocation";
 
 function Header() {
 
