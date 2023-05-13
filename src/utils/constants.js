@@ -7,8 +7,8 @@ export const RESTAURANT_CARD_IMAGE = "https://res.cloudinary.com/swiggy/image/up
 const PROXY_URL= "https://cors-anywhere.herokuapp.com/"
 const SWIGGY_API = "https://www.swiggy.com/dapi/restaurants/list/v5?lat=17.45133957193621&lng=78.39913438366459&page_type=DESKTOP_WEB_LISTING"
 
-// export const RESTAURANT_LIST_URL = PROXY_URL+SWIGGY_API
-export const RESTAURANT_LIST_URL = "/api?lat=17.45133957193621&lng=78.39913438366459&page_type=DESKTOP_WEB_LISTING";
+export const RESTAURANT_LIST_URL = PROXY_URL+SWIGGY_API
+// export const RESTAURANT_LIST_URL = "/api?lat=17.45133957193621&lng=78.39913438366459&page_type=DESKTOP_WEB_LISTING";
 
 // export const RESTAURANT_LIST_URL = "http://localhost:3001/api/restaurants?lat=23.6724138&lng=86.1527555&page_type=DESKTOP_WEB_LISTING"
 
